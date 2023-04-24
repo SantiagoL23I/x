@@ -20,6 +20,7 @@ if __name__ == "__main__":
   factorialDeNum = mcm(n1,n2)
   print( str(factorialDeNum))
   ```
+  
 ```pseudocode
 def Matriz(mat1, mat2):
  for i1 in range(len(mat1)): print(mat1[i1])
