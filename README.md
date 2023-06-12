@@ -1,54 +1,135 @@
 ```pseudocode
-def mcm(n1:int,n2:int, r1:int , r2:int)->int:
-    n=2 
-    while(n1>1):
-        r1= n1%n==0
-        print(r1)
-        n+=1
-        if r1>n1
-        break
-    while (n2>1):
-        r2= n2%n==0
-        print(r2)
-        n+=1
-        if r2>n2
-        break
+def ValoresAscendente(diccionario):  #define la funcion
 
-if __name__ == "__main__":
-  n1 = int(input("Ingrese numero: "))
-  n2 = int(input("Ingrese numero: "))
-  factorialDeNum = mcm(n1,n2)
-  print( str(factorialDeNum))
-  ```
-  
-```pseudocode
-def Matriz(mat1, mat2):
- for i1 in range(len(mat1)): print(mat1[i1])
- for i2 in range(len(mat2)): print(mat2[i2])    
+    valores = sorted(diccionario.values()) #ordena los valores de forma ascendente
+
+    for valor in valores: #Se itera sobre la lista de valores
+
+        print(valor) #imprime cada valor
+
+
+
+
 
     
 
-  
-if __name__ == "__main__":
-  nFilas1 = int(input("Ingrese filas en primera lista: "))
-  nCols1 = int(input("Ingrese columnas es primera lista: "))
-  nFilas2 = int(input("Ingrese filas en segunda lista: "))
-  nCols2 = int(input("Ingrese columnas en segunda lista: "))
-  mat1=[]
-  fila1=[]
-  for i1 in range(nFilas1):
-    for j1 in range(nCols1):
-     num1=int(input("ingrese elemento de la primera matriz("+str(i1+1)+","+str(j1+1)+"):"))
-     fila1.append(num1)
-  mat1.append(num1)
-  mat2=[]
-  fila2=[]
-  for i2 in range(nFilas2):
-    for j2 in range(nCols2):
-      num2=int(input("ingrese elemento de la primera matriz("+str(i2+1)+","+str(j2+1)+"):"))
-      fila2.append(num2)
-  mat2.append(num2)
-  mat2=[]
-  fila2=[]
-  Matriz(mat1,mat2)
+    
+
+    
+
+    
+
+
+
+
+    
+    
+        
+        
+        
+       
+        
+
+        
+        
+       
+        
+
+
+
+
+
+
+
   ```
+  
+```pseudocode
+
+
+import requests
+
+def obtenerDatos(api_url):
+
+    response = requests.get(api_url)
+
+    jsonData = response.json()
+
+    print("JSON:")
+
+    print(jsonData)
+
+    print()
+
+    print("Pares de llave-valor:")
+
+    for key, value in jsonData.items():
+
+        print(f"Llave: {key}, Valor: {value}")
+
+    print()
+
+print("Genshin Impact")
+
+obtenerDatos("https://api.genshin.dev/")
+
+print("Dolar")
+
+obtenerDatos("https://api.exchangerate-api.com/v4/latest/USD")
+
+print("Tabla periodica")
+
+obtenerDatos("https://neelpatel05.pythonanywhere.com/")
+```
+```pseudocode
+def mezclar_diccionarios(a, b): # define la funcion
+
+    Mix = dict(b)  # Crea una copia del segundo diccionario
+
+    for clave, valor in a.items(): #itera sobre las claves y valores del primer diccionario
+
+        if clave not in Mix: 
+
+            Mix[clave] = valor
+
+    return Mix
+
+diccionario1 = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+
+diccionario2 = {'b': 20, 'd': 70, 'e': 50, 'f': 40}
+
+diccionarioTeclado = mezclarDiccionarios(diccionario1, diccionario2)
+
+print(diccionarioTeclado)
+
+```
+```pseudocode 
+
+
+
+```
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
